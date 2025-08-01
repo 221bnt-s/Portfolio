@@ -150,6 +150,7 @@ body {
   color: black;
 }
 
+
 /* Section about */
 #about {
   width: 100%;
@@ -176,13 +177,13 @@ body {
 .contact-form input,
 .contact-form textarea {
   background-color: #2a2a2a;
-  color: #fff;
-  border: 1px solid #444;
+  color: white;
+  border: 1px solid grey;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #999;
+  color: gray;
 }
 
 .contact-form .btn {
