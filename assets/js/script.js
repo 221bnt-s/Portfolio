@@ -11,21 +11,11 @@
 // Téléchargement du CV
 document.querySelector("#telechargerCV").addEventListener('click', function(){
     const LIEN = document.createElement('a');
-    LIEN.href="Cv_BintouSylla.pdf";
+    LIEN.href="CV_BintouSYLLA.pdf";
     LIEN.download="CV_BintouSYLLA";
     LIEN.click();
 
 });
-
-// Barre de progession
-  document.addEventListener("DOMContentLoaded", function () {
-    let skillBars = document.querySelectorAll(".progress-bar");
-
-    skillBars.forEach(bar => {
-      const VALUE = bar.getAttribute("aria-valuenow");
-      bar.style.width = VALUE + "%";
-    });
-  });
 
 // Formuulaire
   document.addEventListener("DOMContentLoaded", () => {
@@ -50,3 +40,16 @@ document.querySelector("#telechargerCV").addEventListener('click', function(){
     });
   });
 
+// Animation du texte
+  document.addEventListener("DOMContentLoaded", () => {
+    const typedElement = document.querySelector('.typed');
+    if (typedElement) {
+      new Typed('.typed', {
+        strings: typedElement.getAttribute('data-typed-items').split(','),
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true
+      });
+    }
+  });
