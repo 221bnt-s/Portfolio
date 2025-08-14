@@ -8,8 +8,10 @@
 }
 
 /* Général */
+
 body {
-  background: url(../img/backgroundDarkMode.jpg);
+  background: url(../img/backgroundDarkMode.jpg) no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
 }
 
@@ -150,17 +152,6 @@ body {
   color: black !important;
 }
 
-.btn-dark {
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-dark:hover {
-  background-color: white;
-  color: black;
-}
-
 /* Section about */
 #about {
   width: 100%;
@@ -172,6 +163,8 @@ body {
   border-radius: 30px;
   margin-right: 10px;
 }
+
+/* telechargerCV */
 
 
 /* Formulaire */
@@ -243,8 +236,8 @@ body {
     padding:5px;
   }
 
-  #telechargerCV {
-    width: 135px;
+  #telechargerCV container {
+    text-align: center;
   }
 
   #card-projects {

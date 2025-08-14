@@ -11,7 +11,7 @@
 // Téléchargement du CV
 document.querySelector("#telechargerCV").addEventListener('click', function(){
     const LIEN = document.createElement('a');
-    LIEN.href="CV_BintouSYLLA.pdf";
+    LIEN.href="CV_Bintou_SYLLA.pdf";
     LIEN.download="CV_BintouSYLLA";
     LIEN.click();
 
